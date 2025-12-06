@@ -491,7 +491,7 @@ public class NokiaMenu {
                 }
              }
 
-             default -> System.out.print("Invalid choice!");
+           
 
         }
 
