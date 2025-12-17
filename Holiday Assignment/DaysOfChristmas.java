@@ -2,7 +2,7 @@ public class DaysOfChristmas {
     
    
      
-    public static String getDayName(int day) {
+    public static void main (String[] args) {
         switch (day) {
             case 1:
                 return "first";
@@ -93,13 +93,5 @@ public class DaysOfChristmas {
     }
     
     
-     
-    public static void main(String[] args) {
-        System.out.println("==================================================");
-        System.out.println("THE TWELVE DAYS OF CHRISTMAS");
-        System.out.println("==================================================");
-        System.out.println();
-        
-        printTwelveDaysOfChristmas();
-    }
+    
 }
