@@ -17,6 +17,9 @@ public class NokiaMenu {
         Press 6 - Games
         Press 7 - Calculator
         Press 8 - Clock
+        Press 9 - Reminder
+        Press 10 - Profiles
+        Press 11 - Sim services
         
         """;
         
@@ -465,7 +468,7 @@ public class NokiaMenu {
             case 8 -> {
                 System.out.println("Clock");
                 
-                String clockMenu = """
+                String clockMenu = """ 
                 
                 Press 1 - Alarm clock
                 Press 2 - Clock settings
