@@ -1,97 +1,49 @@
 public class DaysOfChristmas {
-    
-   
-     
-    public static void main (String[] args) {
-        switch (day) {
-            case 1:
-                return "first";
-            case 2:
-                return "second";
-            case 3:
-                return "third";
-            case 4:
-                return "fourth";
-            case 5:
-                return "fifth";
-            case 6:
-                return "sixth";
-            case 7:
-                return "seventh";
-            case 8:
-                return "eighth";
-            case 9:
-                return "ninth";
-            case 10:
-                return "tenth";
-            case 11:
-                return "eleventh";
-            case 12:
-                return "twelfth";
-            default:
-                return "";
-        }
-    }
-    
-     
-    
-    public static String getGift(int day) {
-        switch (day) {
-            case 1:
-                return "A partridge in a pear tree";
-            case 2:
-                return "Two turtle doves";
-            case 3:
-                return "Three French hens";
-            case 4:
-                return "Four calling birds";
-            case 5:
-                return "Five golden rings";
-            case 6:
-                return "Six geese a-laying";
-            case 7:
-                return "Seven swans a-swimming";
-            case 8:
-                return "Eight maids a-milking";
-            case 9:
-                return "Nine ladies dancing";
-            case 10:
-                return "Ten lords a-leaping";
-            case 11:
-                return "Eleven pipers piping";
-            case 12:
-                return "Twelve drummers drumming";
-            default:
-                return "";
-        }
-    }
-    
-     
-    public static void printTwelveDaysOfChristmas() {
-      
-        for (int day = 1; day <= 12; day++) {
-            
-            String dayName = getDayName(day);
-            System.out.println("On the " + dayName + " day of Christmas, my true love gave to me:");
-            
-            
-            for (int giftDay = day; giftDay >= 1; giftDay--) {
-                String gift = getGift(giftDay);
-                
-                
+    public static void main(String[] args) {
 
-                if (giftDay == 1 && day > 1) {
-                    System.out.println("And " + gift.toLowerCase());
-                } else {
-                    System.out.println(gift);
-                }
+        for (int day = 1; day <= 12; day++) {
+            System.out.print("On the ");
+
+            switch (day) {
+                case 1:  System.out.print("first"); break;
+                case 2:  System.out.print("second"); break;
+                case 3:  System.out.print("third"); break;
+                case 4:  System.out.print("fourth"); break;
+                case 5:  System.out.print("fifth"); break;
+                case 6:  System.out.print("sixth"); break;
+                case 7:  System.out.print("seventh"); break;
+                case 8:  System.out.print("eighth"); break;
+                case 9:  System.out.print("ninth"); break;
+                case 10: System.out.print("tenth"); break;
+                case 11: System.out.print("eleventh"); break;
+                case 12: System.out.print("twelfth"); break;
             }
-            
-           
+
+            System.out.println(" day of Christmas my true love sent to me:");
+
+            switch (day) {
+                case 12: System.out.println("Twelve drummers drumming");
+                case 11: System.out.println("Eleven pipers piping");
+                case 10: System.out.println("Ten lords a-leaping");
+                case 9:  System.out.println("Nine ladies dancing");
+                case 8:  System.out.println("Eight maids a-milking");
+                case 7:  System.out.println("Seven swans a-swimming");
+                case 6:  System.out.println("Six geese a-laying");
+                case 5:  System.out.println("Five golden rings");
+                case 4:  System.out.println("Four calling birds");
+                case 3:  System.out.println("Three French hens");
+                case 2:  System.out.println("Two turtle doves");
+                case 1:  
+                    if (day == 1) {
+                        System.out.println("A partridge in a pear tree");
+                    } else {
+                        System.out.println("And a partridge in a pear tree");
+                    }
+                    break;
+            }
+
             System.out.println();
         }
     }
-    
-    
-    
 }
+
