@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+    public class NumberNew {
+
+    public static void main (String[] args){
+
+
+Scanner input = new Scanner(System.in);
+
+System.out.println("Enter a number from 1-5");
+
+int anyNumber = input.nextInt();
+
+
+if (anyNumber < 0 <= 5)
+
+System.out.println("Hello" + anyNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+}
+
+
